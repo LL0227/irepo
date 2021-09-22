@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Image Repository</title>
+<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/fsp.css" />
+<link rel="stylesheet" href="/css/irepo.css" />
+</head>
+<body>
+<div class="container">
+    <h3 class="text-center">Image Repository</h3>
+    <table id="repos"></table>
+    <div class="text-center">
+        <button type="button" class="btn btn-primary" onclick="uploadNewImage()">Upload New Image</button>
+        <button type="button" class="btn btn-primary" onclick="logout()">Log Out</button>
+    </div>
+</div>
+<div id="image_picker" style="display: none;">
+    <div class="fsp-picker">
+        <div class="fsp-modal">
+            <span class="fsp-picker__close-button fsp-icon--close-modal" onclick="closePicker()"></span> 
+            <div class="fsp-modal__body fsp-modal__body--transformer">
+                <div>
+                    <div class="fsp-header">
+                        <span class="fsp-header-text--visible">Upload Image</span>
+                    </div>
+                </div>
+                <div class="fsp-content fsp-content--selected-items fsp-content--transformer">
+                    <div class="fsp-transformer" id="image_transformer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/assets/jquery-3.4.1.min.js"></script>
+<script src="/assets/jquery.form.min.js"></script>
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="/js/irepo.js"></script>
+<script>
+    $(document).ready(function() {
+        let access_token = window.localStorage.getItem('access_token');
+        if (access_token) {
+            loadImages();
+        } else {
+            window.location.href = 'login.html';
+        }
+    });
+</script>
+</body>
+</html>

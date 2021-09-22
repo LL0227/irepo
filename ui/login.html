@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Login</title>
+<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/irepo.css" />
+</head>
+<body>
+<div class="container">
+        <h3 class="text-center">Login</h3>
+        <form id="login_form" class="needs-validation" novalidate>
+            <div class="mb-4">
+                <label for="email">Email</label>
+                <input type="text" id="email" class="form-control" value="lea.liu@gmail.com" required />
+                <div class="invalid-feedback">This field is required.</div>
+            </div>
+            <div class="mb-4">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="form-control" value="lea123" required />
+                <div class="invalid-feedback">This field is required.</div>
+            </div>
+        </form>
+
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" onclick="login()" >Login</button>
+        </div>
+</div>
+
+<script src="/assets/jquery-3.4.1.min.js"></script>
+<script src="/assets/jquery.form.min.js"></script>
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="/js/irepo.js"></script>
+<script>
+    $(document).ready(function() {
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+html, body {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+body {
+    color: #3b3b3b;
+    margin: 0;
+}
+
+#repos td {
+    width: 240px;
+    height: 120px;
+    padding-bottom: 20px;
+}
+
+.img-bg {
+    background-color: rgb(233, 234, 235);
+    background-position: center center;
+    background-size: cover;
+    grid-row: span 2 / auto;
+    border-radius: 8px;
+    height: 88px;
+}

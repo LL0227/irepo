@@ -1,0 +1,26 @@
+{
+    "http": {
+        "port": 8787
+    },
+    "jwt": {
+        "secret": "#akVh9A74",
+        "expiresInMinutes": 525600, // 365 days
+        "issuer": "lea_liu"
+    },
+    "users": [
+        {
+            "id": "lea",
+            "email": "lea.liu@gmail.com",
+            "password": "lea123",
+            "firstName": "Lea",
+            "lastName": "Liu"
+        },
+        {
+            "id": "mary",
+            "email": "mary.liu@gmail.com",
+            "password": "mary123",
+            "firstName": "Mary",
+            "lastName": "Liu"
+        }
+    ]
+}
